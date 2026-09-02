@@ -1,0 +1,286 @@
+.home {
+    min-height:100vh;
+    background:
+    radial-gradient(circle at 80% 20%, #2563eb55, transparent 35%),
+    linear-gradient(135deg,#020617,#0f172a);
+
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+
+/* Hero */
+
+
+.hero {
+
+    width:84%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    padding:70px 0;
+
+}
+
+
+
+.badge {
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    background:#0ea5e933;
+
+    color:#7dd3fc;
+
+    border:1px solid #38bdf855;
+
+}
+
+
+
+h1 {
+
+    font-size:72px;
+
+    line-height:1.05;
+
+    margin:30px 0;
+
+}
+
+
+
+h1 span {
+
+    color:#38bdf8;
+
+}
+
+
+
+.hero-text p {
+
+    max-width:560px;
+
+    font-size:20px;
+
+    color:#94a3b8;
+
+    line-height:1.7;
+
+}
+
+
+
+.actions {
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.actions a {
+
+    padding:16px 35px;
+
+    border-radius:15px;
+
+    background:#0284c7;
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+
+
+.actions .secondary {
+
+    background:#ffffff15;
+
+    border:1px solid #ffffff20;
+
+}
+
+
+
+/* Stats */
+
+
+.stats {
+
+    display:flex;
+
+    gap:45px;
+
+    margin-top:60px;
+
+}
+
+
+
+.stats strong {
+
+    display:block;
+
+    font-size:35px;
+
+}
+
+
+
+.stats span {
+
+    color:#94a3b8;
+
+}
+
+
+
+/* AI Visual */
+
+
+.hero-image {
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.circle {
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    background:#0284c7;
+
+    filter:blur(130px);
+
+    opacity:.35;
+
+}
+
+
+
+.ai-card {
+
+    position:relative;
+
+    width:350px;
+
+    padding:45px;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    background:#ffffff12;
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid #ffffff20;
+
+}
+
+
+
+.eye-icon {
+
+    font-size:100px;
+
+}
+
+
+
+.ai-card h3 {
+
+    font-size:25px;
+
+}
+
+
+
+.ai-card p {
+
+    color:#94a3b8;
+
+}
+
+
+
+.line {
+
+    height:1px;
+
+    background:#ffffff30;
+
+    margin:25px 0;
+
+}
+
+
+
+/* Features */
+
+
+.features {
+
+    width:84%;
+
+    margin:40px auto 100px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.feature-card {
+
+    background:#ffffff10;
+
+    border:1px solid #ffffff15;
+
+    padding:30px;
+
+    border-radius:25px;
+
+}
+
+
+
+.feature-card p {
+
+    color:#94a3b8;
+
+    line-height:1.6;
+
+}

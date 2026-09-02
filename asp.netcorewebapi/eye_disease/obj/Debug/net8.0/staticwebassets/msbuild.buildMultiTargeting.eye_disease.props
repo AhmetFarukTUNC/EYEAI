@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\eye_disease.props" />
-</Project>

@@ -4462,11 +4462,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atunc\\source\\repos\\eye_disease\\eye_disease\\eye_disease.csproj",
+      "projectUniqueName": "C:\\Users\\atunc\\OneDrive\\Masaüstü\\EYEAI\\asp.netcorewebapi\\asp.netcorewebapi\\eye_disease.csproj",
       "projectName": "eye_disease",
-      "projectPath": "C:\\Users\\atunc\\source\\repos\\eye_disease\\eye_disease\\eye_disease.csproj",
+      "projectPath": "C:\\Users\\atunc\\OneDrive\\Masaüstü\\EYEAI\\asp.netcorewebapi\\asp.netcorewebapi\\eye_disease.csproj",
       "packagesPath": "C:\\Users\\atunc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atunc\\source\\repos\\eye_disease\\eye_disease\\obj\\",
+      "outputPath": "C:\\Users\\atunc\\OneDrive\\Masaüstü\\EYEAI\\asp.netcorewebapi\\asp.netcorewebapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\atunc\\AppData\\Roaming\\NuGet\\NuGet.Config",

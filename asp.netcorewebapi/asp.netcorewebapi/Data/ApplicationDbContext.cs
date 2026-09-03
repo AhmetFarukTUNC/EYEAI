@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using EyeAI.API.Models;
+using EyeAIBackend.Models;
 
 namespace EyeAI.API.Data
 {
@@ -16,6 +17,8 @@ namespace EyeAI.API.Data
         public DbSet<Prediction> Predictions { get; set; }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Contact> Contacts { get; set; }
 
 
         protected override void OnModelCreating(

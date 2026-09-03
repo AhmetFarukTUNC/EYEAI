@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g1XPLf/7T6w=",
+  "dgSpecHash": "RSJTQJLtUj8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\atunc\\source\\repos\\eye_disease\\eye_disease\\eye_disease.csproj",
+  "projectFilePath": "C:\\Users\\atunc\\OneDrive\\Masaüstü\\EYEAI\\asp.netcorewebapi\\asp.netcorewebapi\\eye_disease.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\atunc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\atunc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

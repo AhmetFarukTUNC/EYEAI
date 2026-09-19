@@ -1,4 +1,3 @@
-
 using EyeAI.API.Data;
 using EyeAI.API.Models;
 using EyeAI.API.Services;
@@ -6,12 +5,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
-
 // ========================================
-// CONTROLLERS + ENUM DESTEÐÝ
+// CONTROLLERS + ENUM DESTEÄžÄ°
 // ========================================
 
 builder.Services.AddControllers()
@@ -21,7 +18,6 @@ builder.Services.AddControllers()
             new JsonStringEnumConverter()
         );
     });
-
 
 // ========================================
 // DATABASE - EF CORE
@@ -35,7 +31,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     );
 });
 
-
 // ========================================
 // PASSWORD HASHING
 // ========================================
@@ -45,42 +40,35 @@ builder.Services.AddScoped<
     PasswordHasher<User>
 >();
 
-
 // ========================================
 // AI SERVICE
 // ========================================
 
 builder.Services.AddScoped<AIService>();
 
-
 // ========================================
 // SWAGGER
 // ========================================
 
 builder.Services.AddEndpointsApiExplorer();
-
 builder.Services.AddSwaggerGen();
 
-
 // ========================================
-// REACT CORS
+// CORS
 // ========================================
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowReact",
-        policy =>
-        {
-            policy
-                .AllowAnyOrigin()
-                .AllowAnyHeader()
-                .AllowAnyMethod();
-        });
+    options.AddPolicy("AllowReact", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:3000")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
 });
 
-
 var app = builder.Build();
-
 
 // ========================================
 // SWAGGER
@@ -90,20 +78,11 @@ app.UseSwagger();
 
 app.UseSwaggerUI();
 
-
-// ========================================
-// HTTPS
-// ========================================
-
-app.UseHttpsRedirection();
-
-
 // ========================================
 // STATIC FILES
 // ========================================
 
 app.UseStaticFiles();
-
 
 // ========================================
 // CORS
@@ -111,13 +90,11 @@ app.UseStaticFiles();
 
 app.UseCors("AllowReact");
 
-
 // ========================================
 // AUTHORIZATION
 // ========================================
 
 app.UseAuthorization();
-
 
 // ========================================
 // CONTROLLERS
@@ -125,10 +102,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-
 // ========================================
 // RUN
 // ========================================
 
 app.Run();
-

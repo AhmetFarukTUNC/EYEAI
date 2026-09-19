@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "./Signup.css";
 
-const API_URL = "http://localhost:5194/api";
+const API_URL = "http://localhost:8080/api";
 
 export default function Signup() {
   const [formData, setFormData] = useState({

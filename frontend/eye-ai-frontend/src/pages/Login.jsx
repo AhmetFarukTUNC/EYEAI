@@ -46,7 +46,7 @@ export default function Login() {
     try {
 
       const response = await fetch(
-        "http://localhost:5194/api/Auth/login",
+        "http://localhost:8080/api/Auth/login",
         {
           method: "POST",
 

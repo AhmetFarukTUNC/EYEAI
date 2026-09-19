@@ -54,7 +54,7 @@ namespace EyeAI.API.Services
 
             var response =
                 await _client.PostAsync(
-                    "http://127.0.0.1:5000/predict",
+                    "http://flask-api:5000/predict",
                     content
                 );
 

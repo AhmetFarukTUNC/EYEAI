@@ -1,0 +1,34 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "YourStrong!Passw0rd"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+
+  flask-api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - "5000:5000"
+
+  webapi:
+    build:
+      context: .
+      dockerfile: asp.netcorewebapi/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - sqlserver
+
+  frontend:
+    build:
+      context: ./frontend/eye-ai-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - flask-api
+      - webapi

@@ -15,7 +15,7 @@ CORS(app)
 
 # Model path
 
-MODEL_PATH = "/app/model/cnn_model.h5"
+MODEL_PATH = r"C:\Users\atunc\OneDrive\Masaüstü\eye-disease\model\cnn_model.h5"
 
 
 model = load_model(MODEL_PATH)

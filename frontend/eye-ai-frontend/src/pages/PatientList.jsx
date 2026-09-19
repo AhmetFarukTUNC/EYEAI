@@ -30,7 +30,7 @@ export default function PatientList() {
 
   try {
     const response = await fetch(
-      `http://localhost:5194/api/Patient/${patientId}/user/${user.id}`,
+      `http://localhost:8080/api/Patient/${patientId}/user/${user.id}`,
       {
         method: "DELETE",
       }
@@ -61,7 +61,7 @@ export default function PatientList() {
   }
 };
 
-  const API_URL = "http://localhost:5194";
+  const API_URL = "http://localhost:8080";
 
   useEffect(() => {
     const fetchPatients = async () => {

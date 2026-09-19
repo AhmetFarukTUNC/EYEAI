@@ -68,7 +68,7 @@ formData.append(
 
     try {
       const response = await fetch(
-        "http://localhost:5194/api/Prediction",
+        "http://localhost:8080/api/Prediction",
         {
           method: "POST",
           body: formData,
